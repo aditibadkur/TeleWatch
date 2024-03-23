@@ -31,6 +31,7 @@ import {
   GlobeIcon,
   WalletIcon,
 } from "components/Icons/Icons.js";
+import MyComponent from "components/APICalls/api";
 import React from "react";
 // Variables
 import {
@@ -40,6 +41,8 @@ import {
   lineChartOptions,
 } from "variables/charts";
 import { pageVisits, socialTraffic } from "variables/general";
+import MyComponent1 from "components/APICalls/api2";
+import MyComponent2 from "components/APICalls/api3";
 
 export default function Dashboard() {
   // Chakra Color Mode
@@ -74,7 +77,7 @@ export default function Dashboard() {
                 </StatLabel>
                 <Flex>
                   <StatNumber fontSize='lg' color={textColor} fontWeight='bold'>
-                    $53,897
+                    <MyComponent1/>
                   </StatNumber>
                 </Flex>
               </Stat>
@@ -113,7 +116,7 @@ export default function Dashboard() {
                 </StatLabel>
                 <Flex>
                   <StatNumber fontSize='lg' color={textColor} fontWeight='bold'>
-                    $3,200
+                    <MyComponent2/>
                   </StatNumber>
                 </Flex>
               </Stat>
@@ -191,7 +194,7 @@ export default function Dashboard() {
                 </StatLabel>
                 <Flex>
                   <StatNumber fontSize='lg' color={textColor} fontWeight='bold'>
-                    $173,000
+                    <MyComponent/>
                   </StatNumber>
                 </Flex>
               </Stat>
