@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import TablesProjectRow from "components/Tables/TablesProjectRow";
-
 
 function MyComponent3() {
   const [revenue,setRevenue]=useState('');

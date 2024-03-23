@@ -9,7 +9,7 @@ function MyComponent2() {
       let config = {
         method: 'post',
         maxBodyLength: Infinity,
-        url: 'http://1857-2401-4900-57d1-31e5-11f2-d93f-7593-2a8c.ngrok-free.app/get_values/',
+        url: 'https://1857-2401-4900-57d1-31e5-11f2-d93f-7593-2a8c.ngrok-free.app/get_values/',
         headers: {},
         data: data
       };
