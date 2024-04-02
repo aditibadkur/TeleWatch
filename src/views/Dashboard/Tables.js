@@ -34,28 +34,24 @@ function Tables() {
           <Table variant="simple" color={textColor}>
             <Thead>
               <Tr my=".8rem" pl="0px" color="gray.400" >
-                <Th pl="0px" borderColor={borderColor} color="gray.400" >
-                  Customer Name
-                </Th>
-                <Th borderColor={borderColor} color="gray.400" >Function</Th>
-                <Th borderColor={borderColor} color="gray.400" >Status</Th>
-                <Th borderColor={borderColor} color="gray.400" >Employed</Th>
-                <Th borderColor={borderColor}></Th>
+                <Th pl="0px" borderColor={borderColor} color="gray.400" >Customer ID</Th>
+                <Th borderColor={borderColor} color="gray.400" >Dependents</Th>
+                <Th borderColor={borderColor} color="gray.400" >Phone Service</Th>
+                <Th borderColor={borderColor} color="gray.400" >Internet Service</Th>
+                <Th borderColor={borderColor}color="gray.400">Paperless Billing</Th>
               </Tr>
             </Thead>
             <Tbody>
-              {tablesTableData.map((row, index, arr) => {
+              {tablesTableData.map((row) => {
                 return (
                   <TablesTableRow
-                    name={row.name}
-                    logo={row.logo}
-                    email={row.email}
-                    subdomain={row.subdomain}
-                    domain={row.domain}
-                    status={row.status}
-                    date={row.date}
-                    isLast={index === arr.length - 1 ? true : false}
-                    key={index}
+                  // <MyComponent3/>
+                    name={row.customerID}
+                    logo={row.Dependents}
+                    email={row.PhoneService}
+                    subdomain={row.InternetService}
+                    domain={row.PaperlessBilling}
+                    // key={index}
                   />
                 );
               })}
@@ -63,7 +59,7 @@ function Tables() {
           </Table>
         </CardBody>
       </Card>
-      <Card
+      {/* <Card
         my="22px"
         overflowX={{ sm: "scroll", xl: "hidden" }}
         pb="0px"
@@ -105,7 +101,7 @@ function Tables() {
             </Tbody>
           </Table>
         </CardBody>
-      </Card>
+      </Card> */}
     </Flex>
   );
 }

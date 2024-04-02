@@ -117,7 +117,7 @@ const Chart123 = () => {
     labels: [0, 20, 40, 60, 80, 100, 120, 140],
     datasets: [
       {
-        label: 'Monthly Charges',
+        label: 'Total Charges',
         fill: true,
         lineTension: 0.5,
         backgroundColor: 'rgba(75,192,192,0.4)',
@@ -145,7 +145,7 @@ const Chart123 = () => {
     <Flex p='15px' mt='40px'>
         <Card>
         <Grid templateColumns={{ sm: "1fr", lg: "repeat(2, 1fr)" }}>
-        <CardBody> Online Security
+        <CardBody fontWeight='bold'> Online Security
             <Flex align='center' mt='5px' mb='5px'>
                 <Flex align='center'>
                 <Bar data={stackedBarChartData} />
@@ -153,7 +153,7 @@ const Chart123 = () => {
             </Flex>
         </CardBody>
 
-        <CardBody> Contract Type
+        <CardBody fontWeight='bold'> Contract Type
             <Flex align='center' mt='5px' mb='5px'>
                 <Flex align='center'>
                 <Bar data={stackedBarChartData1} />
@@ -161,7 +161,7 @@ const Chart123 = () => {
             </Flex>
         </CardBody>
 
-        <CardBody > Multiple Lines
+        <CardBody fontWeight='bold'> Multiple Lines
             <Flex align='center' mt='5px' mb='5px'>
                 <Flex align='center'>
                 <Bar data={stackedBarChartData2} />
@@ -169,7 +169,7 @@ const Chart123 = () => {
             </Flex>
         </CardBody>
 
-        <CardBody> Internet Service
+        <CardBody fontWeight='bold'> Internet Service
             <Flex align='center' mt='5px' mb='5px'>
                 <Flex align='center'>
                 <Bar data={stackedBarChartData3} />
@@ -181,7 +181,7 @@ const Chart123 = () => {
                 <Bar data={stackedBarChartData} />
             </div> */}
 
-        <CardBody>
+        <CardBody fontWeight='bold'>
             <Flex align='center' mt='5px' mb='5px'>
                 <Flex align='center'>
                 <Line data={lineChartData} />
@@ -189,7 +189,7 @@ const Chart123 = () => {
             </Flex>
         </CardBody>
 
-        <CardBody>
+        <CardBody fontWeight='bold'>
             <Flex align='center' mt='5px' mb='5px'>
                 <Flex align='center'>
                 <Line data={lineChartData1} />

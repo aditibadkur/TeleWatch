@@ -18,7 +18,8 @@ import avatar3 from "assets/img/avatars/avatar3.png";
 import {  ProfileIcon, SettingsIcon } from "components/Icons/Icons";
 // Custom Components
 import { ItemContent } from "components/Menu/ItemContent";
-import { SearchBar } from "components/Navbars/SearchBar/SearchBar";
+import HelpButton from "components/Sidebar/Helpbutton";
+// import { SearchBar } from "components/Navbars/SearchBar/SearchBar";
 import { SidebarResponsive } from "components/Sidebar/Sidebar";
 import React from "react";
 import { NavLink } from "react-router-dom";
@@ -52,7 +53,7 @@ export default function HeaderLinks(props) {
       w={{ sm: "100%", md: "auto" }}
       alignItems='center'
       flexDirection='row'>
-      <SearchBar me='18px' />
+      {/* <SearchBar me='18px' /> */}
       {/* <NavLink to='/auth/signin'>
         <Button
           ms='0px'
@@ -103,6 +104,7 @@ export default function HeaderLinks(props) {
         routes={routes}
         {...rest}
       />
+      <HelpButton />
       <SettingsIcon
         cursor='pointer'
         ms={{ base: "16px", xl: "0px" }}

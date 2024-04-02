@@ -2,7 +2,7 @@ export const barChartData = [
   {
     label: "Dataset1",
     name: "No",
-    backgroundColor: 'rgba(255, 99, 132)',
+    backgroundColor: 'rgba(255, 255, 255)',
     data: [1400, 1400, 1300, 1300],
   },
   {
@@ -38,7 +38,7 @@ export const barChartOptions = {
   },
   yaxis: {
     show: true,
-    color: "#A0AEC0",
+    // color: "#A0AEC0",
     labels: {
       show: true,
       style: {
@@ -48,7 +48,7 @@ export const barChartOptions = {
     },
   },
   fill: {
-    colors: "#ED8936",
+    // colors: "#3182CE",
   },
   dataLabels: {
     enabled: false,
@@ -96,12 +96,12 @@ const stackedBarChartData = {
 
 export const lineChartData = [
   {
-    name: "Mobile apps",
-    data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+    name: "Churn",
+    data: [0, 0.0055, 0.005, 0.0065, 0.018, 0.015, 0.0001],
   },
   {
-    name: "Websites",
-    data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+    name: "No Churn",
+    data: [0, 0.018, 0.004, 0.008, 0.0115, 0.0089, 0.001],
   },
 ];
 
@@ -122,20 +122,7 @@ export const lineChartOptions = {
   },
   xaxis: {
     type: "datetime",
-    categories: [
-      // "Jan",
-      // "Feb",
-      // "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
+    categories: [0, 20, 40, 60, 80, 100, 120, 140],
     axisTicks: {
       show: false
     },

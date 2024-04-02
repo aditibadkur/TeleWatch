@@ -23,6 +23,7 @@ import {
 import { InvisionLogo } from 'components/Icons/Icons';
 import { HelpIcon } from 'components/Icons/Icons';
 import Chart123 from 'variables/chart_new';
+import HelpButton from 'components/Sidebar/Helpbutton';
 
 var dashRoutes = [
   {
@@ -41,15 +42,15 @@ var dashRoutes = [
     component: Tables,
     layout: "/admin",
   },
-  {
-    path: "/profile",
-    name: "Profile",
-    // rtlName: "لوحة القيادة",
-    icon: <PersonIcon color='inherit' />,
-    secondaryNavbar: true,
-    component: Profile,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/profile",
+  //   name: "Profile",
+  //   // rtlName: "لوحة القيادة",
+  //   icon: <PersonIcon color='inherit' />,
+  //   secondaryNavbar: true,
+  //   component: Profile,
+  //   layout: "/admin",
+  // },
   {
     path: "/signin",
     name: "Sign In",
@@ -90,6 +91,14 @@ var dashRoutes = [
     component: Chart123,
     layout: "/admin",
   },
+  // {
+  //   path: "/needhelp",
+  //   name: "Need Help",
+  //   // rtlName: "لوحة القيادة", 
+  //   icon: <StatsIcon color='inherit' />,
+  //   component: HelpButton,
+  //   layout: "/admin",
+  // },
   // {
   //   path: "/rtl-support-page",
   //   name: "RTL",

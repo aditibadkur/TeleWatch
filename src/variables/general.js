@@ -194,99 +194,87 @@ export const timelineData = [
 //   },
 // ];
 
-export const tablesTableData = [
+export const tablesTableData = [ // customerID, dependents, phone service, internet service, paperless billing
   {
-    logo: avatar1,
-    name: "Esthera Jackson",
-    email: "alexa@simmmple.com",
-    subdomain: "Manager",
-    domain: "Organization",
-    status: "Online",
-    date: "14/06/21",
+    customerID: '439IG',
+    Dependents: 'Yes', 
+    PhoneService: 'Yes',
+    InternetService: 'No',
+    PaperlessBilling: 'No'
   },
   {
-    logo: avatar2,
-    name: "Alexa Liras",
-    email: "laurent@simmmple.com",
-    subdomain: "Programmer",
-    domain: "Developer",
-    status: "Offline",
-    date: "12/05/21",
+    customerID: '782SD',
+    Dependents: 'No', 
+    PhoneService: 'Yes',
+    InternetService: 'No',
+    PaperlessBilling: 'No'
   },
   {
-    logo: avatar3,
-    name: "Laurent Michael",
-    email: "laurent@simmmple.com",
-    subdomain: "Executive",
-    domain: "Projects",
-    status: "Online",
-    date: "07/06/21",
+    customerID: '560HJ',
+    Dependents: 'No', 
+    PhoneService: 'Yes',
+    InternetService: 'Yes',
+    PaperlessBilling: 'No'
   },
   {
-    logo: avatar4,
-    name: "Freduardo Hill",
-    email: "freduardo@simmmple.com",
-    subdomain: "Manager",
-    domain: "Organization",
-    status: "Online",
-    date: "14/11/21",
+    customerID: '094SK',
+    Dependents: 'Yes', 
+    PhoneService: 'Yes',
+    InternetService: 'No',
+    PaperlessBilling: 'Yes'
   },
   {
-    logo: avatar5,
-    name: "Daniel Thomas",
-    email: "daniel@simmmple.com",
-    subdomain: "Programmer",
-    domain: "Developer",
-    status: "Offline",
-    date: "21/01/21",
+    customerID: '382WE',
+    Dependents: 'Yes', 
+    PhoneService: 'No',
+    InternetService: 'Yes',
+    PaperlessBilling: 'No'
   },
   {
-    logo: avatar7,
-    name: "Mark Wilson",
-    email: "mark@simmmple.com",
-    subdomain: "Designer",
-    domain: "UI/UX Design",
-    status: "Offline",
-    date: "04/09/20",
+    customerID: '248ND',
+    Dependents: 'No', 
+    PhoneService: 'No',
+    InternetService: 'No',
+    PaperlessBilling: 'No'
   },
 ];
 
 export const tablesProjectData = [
-  {
-    logo: AdobexdLogo,
-    name: "Chakra UI Version",
-    budget: "$14,000",
-    status: "Working",
-    progression: 60,
-  },
-  {
-    logo: AtlassianLogo,
-    name: "Add Progress Track",
-    budget: "$3,000",
-    status: "Canceled",
-    progression: 10,
-  },
-  {
-    logo: SlackLogo,
-    name: "Fix Platform Errors",
-    budget: "Not set",
-    status: "Done",
-    progression: 100,
-  },
-  {
-    logo: SpotifyLogo,
-    name: "Launch our Mobile App",
-    budget: "$32,000",
-    status: "Done",
-    progression: 100,
-  },
-  {
-    logo: JiraLogo,
-    name: "Add the New Pricing Page",
-    budget: "$400",
-    status: "Working",
-    progression: 25,
-  },
+  // {
+  //   logo: AdobexdLogo,
+  //   name: "Chakra UI Version",
+  //   budget: "$14,000",
+  //   status: "Working",
+  //   progression: 60,
+  // },
+  // {
+  //   logo: AtlassianLogo,
+  //   name: "Add Progress Track",
+  //   budget: "$3,000",
+  //   status: "Canceled",
+  //   progression: 10,
+  // },
+  // {
+  //   logo: SlackLogo,
+  //   name: "Fix Platform Errors",
+  //   budget: "Not set",
+  //   status: "Done",
+  //   progression: 100,
+  // },
+  // {
+  //   logo: SpotifyLogo,
+  //   name: "Launch our Mobile App",
+  //   budget: "$32,000",
+  //   status: "Done",
+  //   progression: 100,
+  // },
+  // {
+  //   logo: JiraLogo,
+  //   name: "Add the New Pricing Page",
+  //   budget: "$400",
+  //   status: "Working",
+  //   progression: 25,
+  // },
 ];
 
 export const invoicesData = [
@@ -392,34 +380,54 @@ export const olderTransactions = [
 
 export const pageVisits = [
   {
-    pageName: "/home",
-    visitors: "4,569",
-    uniqueUsers: 340,
-    bounceRate: "46,53%"
+    customerID: '23AB',
+    gender: 'Male', 
+    seniorCitizen: 'Yes',
+    // tenure:'230000', 
+    // monthlyCharges: '50', 
+    // totalCharges: '500', 
+    partner: 'Yes',
+    contract: 'Two Year'
   },
   {
-    pageName: "/index",
-    visitors: "3,985",
-    uniqueUsers: 319,
-    bounceRate: "46,53%"
+    customerID: '50RF',
+    gender: 'Female', 
+    seniorCitizen: 'No',
+    // tenure:'230000', 
+    // monthlyCharges: '50', 
+    // totalCharges: '500', 
+    partner: 'No',
+    contract: 'Month-to-Month'
   },
   {
-    pageName: "/charts",
-    visitors: "3,513",
-    uniqueUsers: 294,
-    bounceRate: "36,49%"
+    customerID: '33MN',
+    gender: 'Female', 
+    seniorCitizen: 'Yes',
+    // tenure:'230000', 
+    // monthlyCharges: '50', 
+    // totalCharges: '500', 
+    partner: 'No',
+    contract: 'One Year'
   },
   {
-    pageName: "tables",
-    visitors: "2,050",
-    uniqueUsers: 147,
-    bounceRate: "50,87%"
+    customerID: '09VB',
+    gender: 'Male', 
+    seniorCitizen: 'No',
+    // tenure:'230000', 
+    // monthlyCharges: '50', 
+    // totalCharges: '500', 
+    partner: 'Yes',
+    contract: 'Month-to-Month'
   },
   {
-    pageName: "/profile",
-    visitors: "1,795",
-    uniqueUsers: 190,
-    bounceRate: "46,53%"
+    customerID: '67GH',
+    gender: 'Male', 
+    seniorCitizen: 'No',
+    // tenure:'230000', 
+    // monthlyCharges: '50', 
+    // totalCharges: '500', 
+    partner: 'Yes',
+    contract: 'One Year'
   },
 ]
 

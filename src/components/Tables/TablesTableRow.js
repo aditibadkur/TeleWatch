@@ -26,7 +26,7 @@ function TablesTableRow(props) {
         borderBottom={isLast ? "none" : null}
       >
         <Flex align="center" py=".8rem" minWidth="100%" flexWrap="nowrap">
-          <Avatar src={logo} w="50px" borderRadius="12px" me="18px" />
+          {/* <Avatar src={logo} w="50px" borderRadius="12px" me="18px" /> */}
           <Flex direction="column">
             <Text
               fontSize="md"
@@ -36,48 +36,37 @@ function TablesTableRow(props) {
             >
               {name}
             </Text>
-            <Text fontSize="sm" color="gray.400" fontWeight="normal">
+            {/* <Text fontSize="sm" color="gray.400" fontWeight="normal">
               {email}
-            </Text>
+            </Text> */}
           </Flex>
         </Flex>
       </Td>
-
+{/* // {email} {subdomain}*/}
       <Td borderColor={borderColor} borderBottom={isLast ? "none" : null}>
         <Flex direction="column">
           <Text fontSize="md" color={textColor} fontWeight="bold">
-            {domain}
+            {logo}
           </Text>
-          <Text fontSize="sm" color="gray.400" fontWeight="normal">
+          {/* <Text fontSize="sm" color="gray.400" fontWeight="normal">
             {subdomain}
-          </Text>
+          </Text> */}
         </Flex>
       </Td>
       <Td borderColor={borderColor} borderBottom={isLast ? "none" : null}>
-        <Badge
-          bg={status === "Online" ? "green.400" : bgStatus}
-          color={status === "Online" ? "white" : "white"}
-          fontSize="16px"
-          p="3px 10px"
-          borderRadius="8px"
-        >
-          {status}
-        </Badge>
+        <Text fontSize="md" color={textColor} fontWeight="bold">
+            {email}
+        </Text>
       </Td>
       <Td borderColor={borderColor} borderBottom={isLast ? "none" : null}>
         <Text fontSize="md" color={textColor} fontWeight="bold" pb=".5rem">
-          {date}
+          {subdomain}
         </Text>
       </Td>
       <Td borderColor={borderColor} borderBottom={isLast ? "none" : null}>
         <Button p="0px" bg="transparent" variant="no-effects">
-          <Text
-            fontSize="md"
-            color="gray.400"
-            fontWeight="bold"
-            cursor="pointer"
-          >
-            Edit
+          <Text Text fontSize="md" color={textColor} fontWeight="bold">
+            {domain}
           </Text>
         </Button>
       </Td>

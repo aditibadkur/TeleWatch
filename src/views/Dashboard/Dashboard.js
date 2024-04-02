@@ -19,6 +19,9 @@ import {
   useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
+import MyComponent from "components/APICalls/api";
+import MyComponent1 from "components/APICalls/api2";
+import MyComponent2 from "components/APICalls/api3";
 // Custom components
 import Card from "components/Card/Card.js";
 import BarChart from "components/Charts/BarChart";
@@ -31,7 +34,6 @@ import {
   GlobeIcon,
   WalletIcon,
 } from "components/Icons/Icons.js";
-import MyComponent from "components/APICalls/api";
 import React from "react";
 // Variables
 import {
@@ -41,8 +43,7 @@ import {
   lineChartOptions,
 } from "variables/charts";
 import { pageVisits, socialTraffic } from "variables/general";
-import MyComponent1 from "components/APICalls/api2";
-import MyComponent2 from "components/APICalls/api3";
+import { Image } from '@chakra-ui/react';
 
 export default function Dashboard() {
   // Chakra Color Mode
@@ -69,15 +70,15 @@ export default function Dashboard() {
               mb='25px'>
               <Stat me='auto'>
                 <StatLabel
-                  fontSize='xs'
+                  // fontSize='xs'
                   color='gray.400'
                   fontWeight='bold'
                   textTransform='uppercase'>
-                  Today's Money
+                  Total Churn
                 </StatLabel>
                 <Flex>
                   <StatNumber fontSize='lg' color={textColor} fontWeight='bold'>
-                    <MyComponent1/>
+                  <MyComponent1/>
                   </StatNumber>
                 </Flex>
               </Stat>
@@ -87,15 +88,15 @@ export default function Dashboard() {
                 h={"45px"}
                 w={"45px"}
                 bg={iconBlue}>
-                <WalletIcon h={"24px"} w={"24px"} color={iconBoxInside} />
+                <GlobeIcon h={"24px"} w={"24px"} color={iconBoxInside} />
               </IconBox>
             </Flex>
-            <Text color='gray.400' fontSize='sm'>
+            {/* <Text color='gray.400' fontSize='sm'>
               <Text as='span' color='green.400' fontWeight='bold'>
                 +3.48%{" "}
               </Text>
               Since last month
-            </Text>
+            </Text> */}
           </Flex>
         </Card>
         <Card minH='125px'>
@@ -112,7 +113,7 @@ export default function Dashboard() {
                   color='gray.400'
                   fontWeight='bold'
                   textTransform='uppercase'>
-                  Today's Users
+                  Revenue Generated
                 </StatLabel>
                 <Flex>
                   <StatNumber fontSize='lg' color={textColor} fontWeight='bold'>
@@ -126,15 +127,15 @@ export default function Dashboard() {
                 h={"45px"}
                 w={"45px"}
                 bg={iconBlue}>
-                <GlobeIcon h={"24px"} w={"24px"} color={iconBoxInside} />
+                <WalletIcon h={"24px"} w={"24px"} color={iconBoxInside} />
               </IconBox>
             </Flex>
-            <Text color='gray.400' fontSize='sm'>
+            {/* <Text color='gray.400' fontSize='sm'>
               <Text as='span' color='green.400' fontWeight='bold'>
                 +5.2%{" "}
               </Text>
               Since last month
-            </Text>
+            </Text> */}
           </Flex>
         </Card>
         <Card minH='125px'>
@@ -151,11 +152,11 @@ export default function Dashboard() {
                   color='gray.400'
                   fontWeight='bold'
                   textTransform='uppercase'>
-                  New Clients
+                  Anomaly
                 </StatLabel>
                 <Flex>
                   <StatNumber fontSize='lg' color={textColor} fontWeight='bold'>
-                    +2,503
+                    Internet Service
                   </StatNumber>
                 </Flex>
               </Stat>
@@ -169,10 +170,9 @@ export default function Dashboard() {
               </IconBox>
             </Flex>
             <Text color='gray.400' fontSize='sm'>
-              <Text as='span' color='red.500' fontWeight='bold'>
+              {/* <Text as='span' color='red.500' fontWeight='bold'>
                 -2.82%{" "}
-              </Text>
-              Since last month
+              </Text> */}
             </Text>
           </Flex>
         </Card>
@@ -187,16 +187,12 @@ export default function Dashboard() {
               <Stat me='auto'>
                 <StatLabel
                   fontSize='xs'
-                  color='gray.400'
+                  color='red.400'
                   fontWeight='bold'
                   textTransform='uppercase'>
-                  Total Sales
+                  Alerts 
                 </StatLabel>
-                <Flex>
-                  <StatNumber fontSize='lg' color={textColor} fontWeight='bold'>
-                    <MyComponent/>
-                  </StatNumber>
-                </Flex>
+                <MyComponent/>
               </Stat>
               <IconBox
                 borderRadius='50%'
@@ -207,12 +203,12 @@ export default function Dashboard() {
                 <CartIcon h={"24px"} w={"24px"} color={iconBoxInside} />
               </IconBox>
             </Flex>
-            <Text color='gray.400' fontSize='sm'>
+            {/* <Text color='gray.400' fontSize='sm'>
               <Text as='span' color='green.400' fontWeight='bold'>
                 +8.12%{" "}
               </Text>
               Since last month
-            </Text>
+            </Text> */}
           </Flex>
         </Card>
       </SimpleGrid>
@@ -230,14 +226,14 @@ export default function Dashboard() {
           maxW={{ sm: "320px", md: "100%" }}>
           <Flex direction='column' mb='40px' p='28px 0px 0px 22px'>
             <Text color='#fff' fontSize='lg' fontWeight='bold' mb='6px'>
-              Sales Overview
+              Monthly Charges
             </Text>
-            <Text color='#fff' fontSize='sm'>
+            {/* <Text color='#fff' fontSize='sm'>
               <Text as='span' color='green.400' fontWeight='bold'>
                 (+5) more{" "}
               </Text>
               in 2022
-            </Text>
+            </Text> */}
           </Flex>
           <Box minH='300px'>
             <LineChart
@@ -263,27 +259,33 @@ export default function Dashboard() {
           <Flex direction='column'>
             <Flex align='center' justify='space-between' p='22px'>
               <Text fontSize='lg' color={textColor} fontWeight='bold'>
-                Page visits
+                Dataset
               </Text>
-              <Button variant='primary' maxH='30px'>
+              {/* <Button variant='primary' maxH='30px'>
                 SEE ALL
-              </Button>
+              </Button> */}
             </Flex>
             <Box overflow={{ sm: "scroll", lg: "hidden" }}>
               <Table>
                 <Thead>
                   <Tr bg={tableRowColor}>
                     <Th color='gray.400' borderColor={borderColor}>
-                      Page name
+                      Customer ID
                     </Th>
                     <Th color='gray.400' borderColor={borderColor}>
-                      Visitors
+                      Gender
                     </Th>
                     <Th color='gray.400' borderColor={borderColor}>
-                      Unique users
+                      Senior Citizen
                     </Th>
                     <Th color='gray.400' borderColor={borderColor}>
-                      Bounce rate
+                      Partner
+                    </Th>
+                    {/* <Th color='gray.400' borderColor={borderColor}>
+                      Dependents
+                    </Th> */}
+                    <Th color='gray.400' borderColor={borderColor}>
+                      Contract
                     </Th>
                   </Tr>
                 </Thead>
@@ -297,28 +299,42 @@ export default function Dashboard() {
                           fontWeight='bold'
                           borderColor={borderColor}
                           border={index === arr.length - 1 ? "none" : null}>
-                          {el.pageName}
+                          {el.customerID}
                         </Td>
                         <Td
                           color={textTableColor}
                           fontSize='sm'
                           border={index === arr.length - 1 ? "none" : null}
                           borderColor={borderColor}>
-                          {el.visitors}
+                          {el.gender}
                         </Td>
                         <Td
                           color={textTableColor}
                           fontSize='sm'
                           border={index === arr.length - 1 ? "none" : null}
                           borderColor={borderColor}>
-                          {el.uniqueUsers}
+                          {el.seniorCitizen}
                         </Td>
                         <Td
                           color={textTableColor}
                           fontSize='sm'
                           border={index === arr.length - 1 ? "none" : null}
                           borderColor={borderColor}>
-                          {el.bounceRate}
+                          {el.partner}
+                        </Td>
+                        {/* <Td
+                          color={textTableColor}
+                          fontSize='sm'
+                          border={index === arr.length - 1 ? "none" : null}
+                          borderColor={borderColor}>
+                          {el.totalCharges}
+                        </Td> */}
+                        <Td
+                          color={textTableColor}
+                          fontSize='sm'
+                          border={index === arr.length - 1 ? "none" : null}
+                          borderColor={borderColor}>
+                          {el.contract}
                         </Td>
                       </Tr>
                     );
@@ -328,7 +344,8 @@ export default function Dashboard() {
             </Box>
           </Flex>
         </Card>
-        <Card p='0px' maxW={{ sm: "320px", md: "100%" }}>
+        {/* <Image src='KMeansClustering.jpg' alt='summaryPlot' /> */}
+        {/* <Card p='0px' maxW={{ sm: "320px", md: "100%" }}>
           <Flex direction='column'>
             <Flex align='center' justify='space-between' p='22px'>
               <Text fontSize='lg' color={textColor} fontWeight='bold'>
@@ -396,7 +413,7 @@ export default function Dashboard() {
               </Tbody>
             </Table>
           </Box>
-        </Card>
+        </Card> */}
       </Grid>
     </Flex>
   );

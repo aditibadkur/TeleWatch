@@ -8,10 +8,9 @@ import { Image } from '@chakra-ui/react';
 const xai = () => {
   return (
     <Flex p='15px' mt='40px' mb='40px'>
-            <Card p='16px' mt='20px' mb='20px'>
-                Something more about XAI
-                <CardBody align='center' p='5px' px='5px'>
-                correlation
+            <Card p='16px' mt='20px' mb='20px'fontWeight='bold' >
+                <CardBody align='center' p='5px' px='5px' fontWeight='bold'>
+                Correlation
                     <Flex align='center' p='15px 350px' mt='5px' mb='5px'>
                         <Flex align='center' mb='20px'>
                             {/* <Box boxSize='sm'> */}
@@ -21,8 +20,8 @@ const xai = () => {
                     </Flex>
                 </CardBody>
 
-                <CardBody align='center' p='5px' px='5px'>
-                summaryPlot
+                <CardBody align='center' p='5px' px='5px' fontWeight='bold'>
+                Summary Plot
                     <Flex align='center' p='15px 350px' mt='5px' mb='5px'>
                         <Flex align='center' mb='20px'>
                             {/* <Box boxSize='sm'> */}
@@ -32,8 +31,8 @@ const xai = () => {
                     </Flex>
                 </CardBody>
 
-                <CardBody align='center' p='5px' px='5px'>
-                tenureEffect
+                <CardBody align='center' p='5px' px='5px' fontWeight='bold'>
+                Tenure Effect
                     <Flex align='center' p='15px 350px' mt='5px' mb='5px'>
                         <Flex align='center' mb='20px'>
                             {/* <Box boxSize='sm'> */}
@@ -43,8 +42,8 @@ const xai = () => {
                     </Flex>
                 </CardBody>
 
-                <CardBody align='center' p='5px' px='5px'>
-                featureImp
+                <CardBody align='center' p='5px' px='5px' fontWeight='bold'>
+                Feature Importance
                     <Flex align='center' p='15px 350px' mt='5px' mb='5px'>
                         <Flex align='center' mb='20px'>
                             {/* <Box boxSize='sm'> */}

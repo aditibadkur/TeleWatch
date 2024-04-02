@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react";
 import SidebarHelpImage from "assets/img/SidebarHelpImage.png";
 import React from "react";
+import Chatbot from "./Chatbot";
+import HelpButton from "./Helpbutton";
 
 export function SidebarHelp(props) {
   // Pass the computed styles into the `__css` prop
@@ -25,14 +27,14 @@ export function SidebarHelp(props) {
       mb="22px"
       mt="auto"
       mx='20px'>
-      <Image src={SidebarHelpImage} w='110px' h="auto" />
+      {/* <Image src={SidebarHelpImage} w='110px' h="auto" /> */}
       <Flex direction='column' textAlign='center'>
-        <Text fontSize='14px' color={textColor} fontWeight='bold'>
+        {/* <Text fontSize='14px' color={textColor} fontWeight='bold'>
           Need help?
         </Text>
-        <Text fontSize='12px' color='gray.500'>
+        <Button mt='2px' fontSize='14px' color='gray.500' >
           Contact Us.
-        </Text>
+        </Button> */}
       </Flex>
       {/* <Link href='https://demos.creative-tim.com/docs-argon-dashboard-chakra' minW='100%'>
         <Button variant='primary' minW='100%'>
