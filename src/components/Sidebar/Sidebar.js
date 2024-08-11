@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import { HamburgerIcon } from "@chakra-ui/icons";
 // chakra imports
 import {
@@ -21,11 +20,8 @@ import {
   renderThumbDark,
   renderThumbLight,
   renderTrack,
-  // renderTrackRTL,
   renderView
-  // renderViewRTL
 } from "components/Scrollbar/Scrollbar";
-// import { HSeparator } from "components/Separator/Separator";
 import { SidebarHelp } from "components/Sidebar/SidebarHelp";
 import React from "react";
 import { Scrollbars } from "react-custom-scrollbars";
@@ -79,9 +75,7 @@ function Sidebar(props) {
               py="12px"
             >
               { prop.name }
-              {/* {document.documentElement.dir === "rtl"
-                ? prop.rtlName
-                : prop.name} */}
+              
             </Text>
             {createLinks(prop.views)}
           </>
@@ -137,9 +131,6 @@ function Sidebar(props) {
                 )}
                 <Text color={activeColor} my="auto" fontSize="sm">
                   { prop.name }
-                  {/* {document.documentElement.dir === "rtl"
-                    ? prop.rtlName
-                    : prop.name} */}
                 </Text>
               </Flex>
             </Button>
@@ -189,9 +180,7 @@ function Sidebar(props) {
                 )}
                 <Text color={inactiveColor} my="auto" fontSize="sm">
                   { prop.name   }
-                  {/* {document.documentElement.dir === "rtl"
-                    ? prop.rtlName
-                    : prop.name} */}
+                  
                 </Text>
               </Flex>
             </Button>
@@ -211,7 +200,6 @@ function Sidebar(props) {
   var brand = (
     <Box pt={"25px"} mb="12px">
         
-      {/* <HSeparator my="26px" /> */}
     </Box>
   );
 
@@ -240,19 +228,11 @@ function Sidebar(props) {
           <Scrollbars
             autoHide
             renderTrackVertical={ renderTrack }
-            //   document.documentElement.dir === "rtl"
-            //     ? renderTrackRTL
-            //     : renderTrack
-            // }
             renderThumbVertical={useColorModeValue(
               renderThumbLight,
               renderThumbDark
             )}
             renderView= { renderView }
-            //   document.documentElement.dir === "rtl"
-            //     ? renderViewRTL
-            //     : renderView
-            // }
           >
             <Box>{brand}</Box>
             <Stack direction="column" mb="40px">
@@ -316,9 +296,6 @@ export function SidebarResponsive(props) {
               py="12px"
             >
               { prop.name }
-              {/* {document.documentElement.dir === "rtl"
-                ? prop.rtlName
-                : prop.name} */}
             </Text>
             {createLinks(prop.views)}
           </>
@@ -372,9 +349,6 @@ export function SidebarResponsive(props) {
                 )}
                 <Text color={activeColor} my="auto" fontSize="sm">
                   { prop.name }
-                  {/* {document.documentElement.dir === "rtl"
-                    ? prop.rtlName
-                    : prop.name} */}
                 </Text>
               </Flex>
             </Button>
@@ -423,9 +397,6 @@ export function SidebarResponsive(props) {
                 )}
                 <Text color={inactiveColor} my="auto" fontSize="sm">
                   { prop.name }
-                  {/* {document.documentElement.dir === "rtl"
-                    ? prop.rtlName
-                    : prop.name} */}
                 </Text>
               </Flex>
             </Button>
@@ -442,7 +413,6 @@ export function SidebarResponsive(props) {
   var brand = (
     <Box pt={"35px"} mb="8px">
       {logo}
-      {/* <HSeparator my="26px" /> */}
     </Box>
   );
 
@@ -467,7 +437,6 @@ export function SidebarResponsive(props) {
         isOpen={isOpen}
         onClose={onClose}
         placement={ "left" }
-        // placement={document.documentElement.dir === "rtl" ? "right" : "left"}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
@@ -491,7 +460,6 @@ export function SidebarResponsive(props) {
             <Box maxW="100%" h="100vh">
               <Box>{brand}</Box>
               <Stack direction="column" mb="40px">
-                {/* <Box>{links}</Box> */}
               </Stack>
               <SidebarHelp />
             </Box>
